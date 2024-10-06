@@ -3,7 +3,14 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "win11"
+      VERSION: "ltsc10"
+      LANGUAGE: "Italian"
+      REGION: "it-IT"
+      KEYBOARD: "it-IT"
+      DISK_SIZE: "26G"
+      RAM_SIZE: "7G"
+      CPU_CORES: "4"
+      USERNAME: "Windows"
     devices:
       - /dev/kvm
     cap_add:
